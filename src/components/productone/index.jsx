@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Icon } from "antd"
+import { Icon } from 'antd';
 import { addshop } from "@/api/actions"
 import "./style.less"
 export default class componentName extends Component {

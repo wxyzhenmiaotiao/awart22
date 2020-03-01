@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { addressadd ,} from "@/api/actions"
-import { Form, Icon, Input, Button, Checkbox , message} from 'antd';
+import { Form, Input, Button, Checkbox , message} from 'antd';
 import { connect } from 'react-redux'
 import './styles.less'
 export default @connect(state => {
@@ -58,7 +58,6 @@ class extends Component {
                   rules: [{ required: true, message: '姓名不能为空' }],
                 })(
                   <Input
-                    prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
                     placeholder="请填写你的名字"
                   />,
                 )}
@@ -68,7 +67,6 @@ class extends Component {
                   rules: [{ required: true, message: '小区名不能为空' }],
                 })(
                   <Input
-                    prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
                     placeholder="小区/写字楼/学校等"
                   />,
                 )}
@@ -78,7 +76,6 @@ class extends Component {
                   rules: [{ required: true, message: '详细地址不能为空' }],
                 })(
                   <Input
-                    prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
                     placeholder="请填写能够联系到您的电话"
                   />,
                 )}
@@ -88,7 +85,6 @@ class extends Component {
                   rules: [{ required: true, message: '电话不可为空' }],
                 })(
                   <Input
-                    prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
                     placeholder="请填写能够联系到您的电话"
                   />,
                 )}

@@ -89,12 +89,15 @@ export default class extends Component {
     })
     localStorage.removeItem('searchhistory')
   }
+  backg = () => {
+    this.props.history.go(-1)
+  }
   render() {
     return (
       <div className="two_body">
         <div className="two_body_header">
           <div className="zuo">
-            <Icon type="left" />
+            <span onClick={this.backg}>{'<'}</span>
           </div>
           <div className="cen">
             搜索

@@ -23,7 +23,7 @@ export default class componentName extends Component {
       <div className="detailsBox">
         <div className="detailsHeader">
           <div className="flexcoushu" onClick={this.backg}>
-            <Icon type="left" />
+            <span onClick={this.backg}>{'<'}</span>
           </div>
           <div className="detailsHeaderone">
             商家详情
@@ -53,7 +53,7 @@ export default class componentName extends Component {
               <span> 食品监督安全公示</span>
               <span className="qiye">
 
-                企业认证详情<Icon type="right" />
+                企业认证详情 >
               </span>
             </div>
           </div>

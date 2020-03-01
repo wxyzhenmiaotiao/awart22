@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Icon } from "antd"
 import './styles.less'
 import { connect } from 'react-redux'
 
@@ -15,6 +14,10 @@ class extends Component {
     this.state = {
       image: "../image/2.jpg"
     }
+  }
+
+  fan = () => {
+    this.props.history.go(-1)
   }
 
   loginBtn = () => {
@@ -89,7 +92,7 @@ class extends Component {
       <div className="four_body">
         <div className="four_body_1">
           <div className="four_body_1_left">
-            <Icon type="left" />
+            <span onClick={this.fan}>{'<'}</span>
           </div>
           <div className="four_body_1_right">
             我的
